@@ -1,5 +1,9 @@
 import React, { useState } from "react"
-
+import Navigation from "./Navigation"
+import About from "./pages/About" 
+import Portfolio from "./pages/Portfolio"
+import Contact from "./pages/Contact"
+import Resume from "./pages/Resume" 
 // Function for the header component, which includes the nav bar.
 export default function Header() {
     // currentPage state variable for tracking which page should be rendered
@@ -13,7 +17,7 @@ export default function Header() {
         if (currentPage === 'Portfolio') {
           return <Portfolio />;
         }
-        if (currentPage === 'Blog') {
+        if (currentPage === 'Contact') {
           return <Contact />;
         }
         return <Resume />;
