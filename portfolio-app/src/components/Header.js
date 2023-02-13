@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import Navigation from "./Navigation"
+import Footer from "./Footer"
 import About from "./pages/About" 
 import Portfolio from "./pages/Portfolio"
 import Contact from "./pages/Contact"
@@ -11,8 +12,8 @@ export default function Header() {
 
     // returns a certain page based on the currentPage state variable
     const renderPage = () => {
-        if (currentPage === 'About') {
-          return <About />;
+        if (currentPage === 'Resume') {
+          return <Resume />;
         }
         if (currentPage === 'Portfolio') {
           return <Portfolio />;
@@ -20,17 +21,18 @@ export default function Header() {
         if (currentPage === 'Contact') {
           return <Contact />;
         }
-        return <Resume />;
+        return <About />;
       };
 
       const handlePageChange = (page) => setCurrentPage(page)
 
     return (
-        <container>
+        <div>
             <h1>Camden Van Sciver</h1>
             {/* Send the currentPage variable and the handlePageChange to the Navigation component */}
             <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
-        </container>
+            <Footer />
+        </div>
     )
 }

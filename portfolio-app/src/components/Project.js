@@ -7,13 +7,12 @@ export default function Project(props) {
     const repoUrl = props.repo
 
     return (
-        <a href={deployedUrl}> 
+        <div> 
             <img src={image} alt="Project snapshot" />
-            <h2>{title}</h2>
+            <a href={deployedUrl}><h2>{title}</h2></a>
             <a href={repoUrl}>
                 <img src='../../public/github512.png' alt='Github Logo' />
             </a>
-        </a>
-       
+        </div>
     )
 }
