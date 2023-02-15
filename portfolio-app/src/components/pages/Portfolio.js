@@ -3,13 +3,13 @@ import Project from '../Project'
 
 const projects = [
     {
-        image: '../../../public/logo192.png',
+        image: '/logo192.png',
         title: 'My Project',
         deploy: 'https://text-editor-app-farmfreshyeets.herokuapp.com/',
         repo: 'https://github.com/FarmFreshYeets/text-editor-app'
     },
     {
-        image: '../../../public/logo192.png',
+        image: '/logo192.png',
         title: 'My Project',
         deploy: 'https://text-editor-app-farmfreshyeets.herokuapp.com/',
         repo: 'https://github.com/FarmFreshYeets/text-editor-app'
@@ -18,7 +18,7 @@ const projects = [
 
 export default function Portfolio() {
     return (
-        <div>
+        <div className='projectList'>
             {projects.map((project) => {
                 return Project(project)
             })}
