@@ -12,7 +12,7 @@ export default function Project(props) {
             <div className='projectInfo'>
                 <a href={deployedUrl}><h2>{title}</h2></a>
                 <a href={repoUrl}>
-                    <img src='/github512.png' alt='Github Logo' className='smallImg' />
+                    <img src='github512.png' alt='Github Logo' className='smallImg' />
                 </a>
             </div>
         </div>
