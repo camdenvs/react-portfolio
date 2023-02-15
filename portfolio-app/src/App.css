@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+a.nav-link {
+  text-decoration: none;
+  color: #DADAD9
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-item {
+  display: inline-block;
+  padding: 10px;
+  border-right: 2px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav {
+  display: inline-block;
+  margin: auto;
+  font-size: 32px
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  font-size: 48px;
+  margin: 10px 10px 20px 10%;
+}
+
+.footer {
+  background-color: #DB5461;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.section {
+  padding: 50px 100px 50px 100px;
+  background-color: #363457;
+}
+
+.section h3 {
+  font-size: 28px;
+  margin: 0px;
+  padding: 10px;
+  color: #BDB4BF;
+}
+
+.section p {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 15px;
+  color: #BDB4BF;
+}
+
+.section a {
+  text-decoration: none;
+  color: #DB5461;
+}
+
+.section li {
+  color: #BDB4BF;
+  font-size: 24px;
+}
+
+.form {
+  color: #BDB4BF;
+  font-weight: 500;
+  font-size: 24px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 400px;
 }
 
-.App-link {
-  color: #61dafb;
+.form input{
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.messageBox {
+  line-height: 20px;
+  font-size: 20px;
+  height: 100px;
+}
+
+.submitBtn {
+  border: none;
+  margin-top: 10px;
+  width: 75px;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 5px;
+  color: #363457;
+  background-color: #BDB4BF;
+  cursor: pointer;
+}
+
+.smallImg {
+  width: 50px;
+  background: white;
+  border-radius: 10px
+}
+
+.projectCard {
+  margin: 50px;
+  width: 50%
+}
+
+.projectSnapshot {
+  position: absolute;
+  z-index: 3;
+}
+
+.projectCard:hover > .projectSnapshot{
+  z-index: 1;
+  filter: blur(5px) grayscale(25%) brightness(1.5);
+}
+
+.projectList {
+  display: flex;
+}
+
+.projectInfo {
+  position: relative;
+  z-index: 2;
 }

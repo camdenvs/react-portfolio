@@ -50,6 +50,7 @@ export default function Contact() {
         setUserName('');
         setMessage('');
         setEmail('');
+        setErrorMessage('Message recieved!')
     };
 
     return (
@@ -62,7 +63,6 @@ export default function Contact() {
                     name="email"
                     onChange={handleInputChange}
                     type="email"
-                    placeholder="email"
                 />
                 <label htmlFor='userName'>Name:</label>
                 <input
@@ -70,17 +70,16 @@ export default function Contact() {
                     name="userName"
                     onChange={handleInputChange}
                     type="text"
-                    placeholder="name"
                 />
                 <label htmlFor='message'>Message:</label>
-                <input
+                <textarea
+                    className='messageBox'
                     value={message}
                     name="message"
                     onChange={handleInputChange}
                     type="text"
-                    placeholder="enter message here"
                 />
-                <button type="button" onClick={handleFormSubmit}>Submit</button>
+                <button type="button" onClick={handleFormSubmit} className='submitBtn'>Submit</button>
             </form>
             {errorMessage && (
                 <div>
