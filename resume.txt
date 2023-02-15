@@ -1,0 +1,20 @@
+Front-End Proficiencies
+- HTML
+- CSS
+- JavaScript
+- JQuery
+- Responsive Design
+
+Back-End Proficiencies
+- Node.js
+- Express.js
+- MySQL
+- MongoDB
+- REACT
+
+Other Development Proficiencies
+- Git
+- PWA
+- Scrum
+- APIs
+            
