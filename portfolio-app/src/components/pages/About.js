@@ -4,6 +4,7 @@ export default function About() {
     return (
         <div>
             <h3>About Me</h3>
+            <img src='hawaiiantruckday.jpg' alt='profile' className='profilePic'></img>
             <p>
                 My name is Camden Grant Van Sciver. I was born at the very end of 2002 in Mesa, Arizona. Having been born in the 21st Century, 
                 the internet has always been part of my life. My parents introduced me to computers at a young age and I've always been fascinated by 
