@@ -3,6 +3,12 @@ import Project from '../Project'
 
 const projects = [
     {
+        image: 'google-books.png',
+        title: 'Google Search Books',
+        deploy: 'https://convenient-library.herokuapp.com/',
+        repo: 'https://github.com/FarmFreshYeets/convenient-library'
+    },
+    {
         image: 'spoonfedreviews.png',
         title: 'Spoon-Fed Reviews',
         deploy: 'https://spoon-fed-reviews.herokuapp.com/',
