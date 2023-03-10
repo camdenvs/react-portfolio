@@ -3,6 +3,12 @@ import Project from '../Project'
 
 const projects = [
     {
+        image: 'ocean-driven.png',
+        title: 'Ocean Driven',
+        deploy: 'https://ocean-driven.herokuapp.com/',
+        repo: 'https://github.com/mayamckinney/ocean-driven'
+    },
+    {
         image: 'google-books.png',
         title: 'Google Search Books',
         deploy: 'https://convenient-library.herokuapp.com/',
